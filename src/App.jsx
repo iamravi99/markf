@@ -10,11 +10,13 @@ import DesiStoryDetail from './Comp/DesiStoryDetail';
 
 import Story2Detail from './Comp/Story2Detail';
 import Story2 from './Comp/Story2';
+import InstantMessageAd from './Comp/InstantMessageAd';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+         <InstantMessageAd/>
         <Route path="/" element={<Home />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/story/:id" element={<StoryDetail />} />
