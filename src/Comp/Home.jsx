@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import Stories from './Stories'
 import BannerAds from './BannerAds'
+import InstantMessageAd from './InstantMessageAd'
 
 const Home = () => {
   return (
@@ -10,7 +11,7 @@ const Home = () => {
    <Navbar/>
    <BannerAds/>
    <Stories/>
-
+  <InstantMessageAd/>
 
    
    <Footer/>
