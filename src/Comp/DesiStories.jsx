@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import desiStories from '../assets/DesiStories.json';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Banner2 from './ADS/Banner2';
 
 const DesiStories = () => {
   return (
     <>
       <Navbar />
+      <Banner2/>
       <section className="bg-zinc-950 text-white py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-yellow-400 text-center mb-12">
