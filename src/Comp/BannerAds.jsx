@@ -19,8 +19,17 @@ const BannerAds = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center my-4">
-      <ins className="eas6a97888e2" data-zoneid="5690700"></ins>
+    <div className="w-full flex justify-center px-2 sm:px-4 md:px-8 lg:px-12 my-4">
+      <ins
+        className="eas6a97888e2"
+        data-zoneid="5690700"
+        style={{
+          display: 'block',
+          width: '100%',
+          maxWidth: '728px', // for leaderboard type
+          height: 'auto',
+        }}
+      ></ins>
     </div>
   );
 };
