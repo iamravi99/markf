@@ -10,7 +10,7 @@ import DesiStoryDetail from './Comp/DesiStoryDetail';
 
 import Story2Detail from './Comp/Story2Detail';
 import Story2 from './Comp/Story2';
-import InstantMessageAd from './Comp/InstantMessageAd';
+
 
 function App() {
   return (
