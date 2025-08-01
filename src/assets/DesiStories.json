@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "गाँव की पहली रात",
+    "excerpt": "जब नयापन और गर्मी एक साथ टकराए...",
+    "category": "Desi",
+    "image": "https://images.theconversation.com/files/367676/original/file-20201105-19-kn75hv.jpg?ixlib=rb-4.1.0&rect=53%2C826%2C6000%2C3000&q=45&auto=format&w=1356&h=668&fit=crop",
+    "content": "यह कहानी गाँव की सादगी, गर्मी और मोहब्बत की एक खूबसूरत झलक दिखाती है..."
+  },
+  {
+    "id": 2,
+    "title": "पड़ोस वाली भाभी",
+    "excerpt": "जब दीवार के इस पार से रिश्ता गहराया...",
+    "category": "Neighbor",
+    "image": "https://images.theconversation.com/files/367676/original/file-20201105-19-kn75hv.jpg?ixlib=rb-4.1.0&rect=53%2C826%2C6000%2C3000&q=45&auto=format&w=1356&h=668&fit=crop",
+    "content": "ये कहानी है एक ऐसे रिश्ते की जो धीरे-धीरे हदें पार करता है..."
+  }
+]

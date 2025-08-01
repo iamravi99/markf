@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Forbidden Nights",
+    "excerpt": "A married woman meets a stranger during a business trip. What follows is a night full of passion and mystery...",
+    "category": "Romance",
+    "image": "https://picsum.photos/id/1011/800/400"
+  },
+  {
+    "id": 2,
+    "title": "The Librarian's Secret",
+    "excerpt": "Behind her glasses and calm smile, she had a wild side waiting to be discovered inside the quiet library.",
+    "category": "Fantasy",
+    "image": "https://picsum.photos/id/1005/800/400"
+  },
+  {
+    "id": 3,
+    "title": "Roommate Desires",
+    "excerpt": "When living with someone you secretly crave, boundaries blur and temptation takes over.",
+    "category": "Taboo",
+    "image": "https://picsum.photos/id/1015/800/400"
+  },
+  {
+    "id": 4,
+    "title": "Midnight Massage",
+    "excerpt": "A late-night massage appointment turns into a steamy experience neither of them expected.",
+    "category": "Erotic",
+    "image": "https://picsum.photos/id/1025/800/400"
+  },
+  {
+    "id": 5,
+    "title": "Train Encounters",
+    "excerpt": "Two strangers meet on an overnight train ride. One shared cabin, endless possibilities.",
+    "category": "Adventure",
+    "image": "https://picsum.photos/id/1035/800/400"
+  },
+  {
+    "id": 6,
+    "title": "Boss's Cabin",
+    "excerpt": "Her promotion came with more than responsibilities — it brought forbidden office fantasies to life.",
+    "category": "Office",
+    "image": "https://picsum.photos/id/1045/800/400"
+  },
+  {
+    "id": 7,
+    "title": "Village Affair",
+    "excerpt": "In the silence of the village night, their secret love ignited beneath the stars.",
+    "category": "Rural Romance",
+    "image": "https://picsum.photos/id/1055/800/400"
+  },
+  {
+    "id": 8,
+    "title": "The Housemaid's Game",
+    "excerpt": "She was more than a housemaid — her eyes held a challenge he couldn’t resist.",
+    "category": "Drama",
+    "image": "https://picsum.photos/id/1065/800/400"
+  },
+  {
+    "id": 9,
+    "title": "Behind the Curtain",
+    "excerpt": "They thought no one was watching — but hidden eyes saw it all from behind the curtain.",
+    "category": "Suspense",
+    "image": "https://picsum.photos/id/1075/800/400"
+  },
+  {
+    "id": 10,
+    "title": "Rainy Day Temptations",
+    "excerpt": "Stuck in a cabin during heavy rain, their heated emotions finally boiled over.",
+    "category": "Weather Romance",
+    "image": "https://picsum.photos/id/1085/800/400"
+  }
+]
