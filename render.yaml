@@ -1,0 +1,8 @@
+staticSites:
+  - name: lustverse
+    buildCommand: npm run build
+    publishPath: build
+    redirects:
+      - source: "/*"
+        destination: "/index.html"
+        statusCode: 200

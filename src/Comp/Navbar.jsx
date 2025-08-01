@@ -1,32 +1,31 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const links = [
-    { name: "Home", href: "/" },
-    { name: "Stories", href: "/stories" },
-    { name: "Desi Stories", href: "/desi" },
-   
-    { name: "About", href: "/about" },
-    
-    { name: "Disclaimer", href: "/disclaimer" }
+    { name: "Home", to: "/" },
+    { name: "Stories", to: "/stories" },
+    { name: "Desi Stories", to: "/desi" },
+    { name: "About", to: "/about" },
+    { name: "Disclaimer", to: "/disclaimer" }
   ];
 
   return (
     <nav className="bg-black text-white p-4 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1 className="text-2xl font-bold tracking-widest text-pink-500">
-          LustVerse
+          <Link to="/">LustVerse</Link>
         </h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-sm">
           {links.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="hover:text-pink-400 transition">{link.name}</a>
+              <Link to={link.to} className="hover:text-pink-400 transition">{link.name}</Link>
             </li>
           ))}
         </ul>
@@ -44,7 +43,13 @@ const Navbar = () => {
         <ul className="md:hidden mt-4 flex flex-col gap-3 px-4">
           {links.map((link) => (
             <li key={link.name}>
-              <a href={link.href} className="block hover:text-pink-400 transition">{link.name}</a>
+              <Link
+                to={link.to}
+                className="block hover:text-pink-400 transition"
+                onClick={() => setOpen(false)} // close menu on link click
+              >
+                {link.name}
+              </Link>
             </li>
           ))}
         </ul>
