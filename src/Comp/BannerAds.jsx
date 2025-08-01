@@ -1,35 +1,49 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const BannerAds = () => {
+  const [zoneId, setZoneId] = useState(null);
+  const [className, setClassName] = useState('');
+
   useEffect(() => {
-    const script1 = document.createElement('script');
-    script1.src = 'https://a.magsrv.com/ad-provider.js';
-    script1.async = true;
-    script1.type = 'application/javascript';
-    document.body.appendChild(script1);
+    const isMobile = window.innerWidth <= 768;
 
-    const script2 = document.createElement('script');
-    script2.innerHTML = '(AdProvider = window.AdProvider || []).push({"serve": {}});';
-    document.body.appendChild(script2);
-
-    return () => {
-      document.body.removeChild(script1);
-      document.body.removeChild(script2);
-    };
+    if (isMobile) {
+      setZoneId('5690716'); // Mobile zone ID
+      setClassName('eas6a97888e10');
+    } else {
+      setZoneId('5690700'); // Desktop zone ID
+      setClassName('eas6a97888e2');
+    }
   }, []);
 
+  useEffect(() => {
+    if (!zoneId || !className) return;
+
+    const script = document.createElement('script');
+    script.src = 'https://a.magsrv.com/ad-provider.js';
+    script.async = true;
+    script.type = 'application/javascript';
+    document.body.appendChild(script);
+
+    const inlineScript = document.createElement('script');
+    inlineScript.innerHTML = '(AdProvider = window.AdProvider || []).push({"serve": {}});';
+    document.body.appendChild(inlineScript);
+
+    return () => {
+      document.body.removeChild(script);
+      document.body.removeChild(inlineScript);
+    };
+  }, [zoneId, className]);
+
   return (
-    <div className="w-full flex justify-center px-2 sm:px-4 md:px-8 lg:px-12 my-4">
-      <ins
-        className="eas6a97888e2"
-        data-zoneid="5690700"
-        style={{
-          display: 'block',
-          width: '100%',
-          maxWidth: '728px', // for leaderboard type
-          height: 'auto',
-        }}
-      ></ins>
+    <div className="w-full flex justify-center items-center my-4 px-2">
+      {zoneId && className && (
+        <ins
+          className={className}
+          data-zoneid={zoneId}
+          style={{ display: 'block', width: '100%', maxWidth: '728px', height: 'auto' }}
+        ></ins>
+      )}
     </div>
   );
 };
