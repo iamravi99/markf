@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-         <InstantMessageAd/>
+         
         <Route path="/" element={<Home />} />
         <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/story/:id" element={<StoryDetail />} />
